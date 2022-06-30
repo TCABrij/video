@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: poppins, sans-serif;
+    font-weight: 100;
+}
+
+.title{
+    background-color: dodgerblue;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    text-align: center;
+    padding: .3em;
+    user-select: none;
+    pointer-events: none;
+}
+
+.flex-container{
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+.flex-item{
+    width: 50%;
+    border: 1px solid gray;
+}
+.item1{
+    border-top-right-radius: 10px;
+}
+.item2{
+    padding: 15px;
+    border-top-left-radius: 10px;
+
+}
+
+.item1 video{
+    height: 100%;
+    width: 100%;
+}
+.item2 img{
+    height: 100%;
+    width: 100%;
+}
+
+/* buttons  */
+.buttons{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: .5em;
+    text-align: center;
+    background-color: white;
+    border-radius: 100vmax;
+    box-shadow: 0px 0px 10px white;
+}
+button{
+    padding: .5em .8em;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 100vmax;
+    font-size: 1em;
+}
+.start-webcam-btn{
+    background-color: dodgerblue;
+    color: white;
+
+}
+.capture-btn{
+    background-color: orange;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+.disabled-btn{
+    cursor: not-allowed;
+    filter: blur(1px)
+}

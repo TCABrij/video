@@ -10,18 +10,25 @@
     <script src="source/main.js" defer></script>
 </head>
 <body>
-    <h1 class="title">Video Capture</h1>
-    <div class="flex-container">
-        <div class="flex-item item1">
-            <video src="" autoplay></video>
+    <h1 class="title"> Video Capture</h1>
+    <div class="container">
+
+        <div class="box">
+            <video src="" autoplay class="video shadow" poster="source/img/favicon.png"></video>
         </div>
-        <div class="flex-item item2">
-            <img src="" alt="">
-        </div>
+
         <div class="buttons">
             <button class="start-webcam-btn">Start WebCam</button>
             <button class="capture-btn disabled-btn">Capture Image</button>
         </div>
+        <div class="box">
+            <figure>
+                <img src="" alt="" class="image shadow">
+                <figcaption>Capture Date:</figcaption>
+            </figure>
+        </div>
+
+
     </div>
 </body>
 </html>

@@ -48,7 +48,7 @@ body{
   
 }
 figcaption{
-    color: green;
+    color: rgb(255, 127, 63);
     font-weight: 600;
     text-align: center;
 }
@@ -92,4 +92,49 @@ button{
 .disabled-btn{
     cursor: not-allowed;
     filter: blur(1px)
+}
+
+
+/* modal and full screen video  */
+.modal{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    backdrop-filter: blur(5px);
+    display: grid;
+    place-content: center;
+    cursor: zoom-out;
+}
+.close-modal-btn{
+    position: absolute;
+    right: 0;
+    margin: 5px;
+    font-weight: 600;
+    color: green;
+    user-select: none;
+}
+
+.modal video{
+    height: 67vh;
+    width: 80vw;
+    box-shadow: 0px 0px 20px black;
+    background-color: white;
+}
+.modal-hidden{
+    display: none;
+}
+
+@media (max-width: 909px){
+    .modal video{
+        width: 60vw;
+        height: auto;
+    }
+}
+@media (min-width: 909px){
+    .modal video{
+        width: auto;
+        height: 71vh;
+    }
 }

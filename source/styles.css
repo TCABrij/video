@@ -50,9 +50,15 @@ body{
   
 }
 figcaption{
+    color: green;
+    font-weight: 600;
+    text-align: center;
+}
+figcaption::before{
+    content: "Captured on: ";
     color: black;
     font-weight: 400;
-    text-align: center;
+
 }
 
 /* buttons  */

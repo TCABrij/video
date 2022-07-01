@@ -32,7 +32,9 @@ function takeSnap(){
     const dataURI = canvas.toDataURL("image/png")
 
     // setting image to img tag
- img.src = dataURI
-    
+    img.src = dataURI
+    const date = new Date()
+    const timeAndDate = (`${date.toLocaleDateString()} ${date.toLocaleTimeString()}`)
+    document.querySelector('figcaption').innerText = timeAndDate
     
 }
